@@ -3,12 +3,111 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Welcome, Warrior</title>
 		<link rel="stylesheet" href="styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
-		<!-- 
-     -->
+		<div class="container">
+			<div class="image-section">
+				<div class="backdrop">
+					<img
+						src="Images/backdrop-image.webp"
+						alt="backdrop-image"
+					/>
+				</div>
+				<div class="logo-bg">
+					<img src="Images/odin-lined.png" alt="odin-logo" />
+					<p>ODIN</p>
+				</div>
+			</div>
+			<div class="form-section">
+				<div class="tagline">
+					<h1>Rise, Chosen of the Next Age</h1>
+					<h2>I am Odin, All-Father of gods and men.</h2>
+					<p>
+						I have watched your world from my high seat. Chaos
+						grows. Weakness spreads. I now call upon the fearless to
+						rise, to train, and to wield power with purpose. Answer
+						the call, and be made worthy.
+					</p>
+				</div>
+				<div class="form-container">
+					<form action="" method="post">
+						<div class="input-container">
+							<h2>Let's do this!</h2>
+							<div class="inputs">
+								<div>
+									<label for="firstname">First name</label>
+									<input
+										type="text"
+										id="firstname"
+										placeholder="Enter first name"
+									/>
+								</div>
+								<div>
+									<label for="lastname">Last name</label>
+									<input
+										type="text"
+										id="lastname"
+										placeholder="Enter last name"
+									/>
+								</div>
+								<div>
+									<!-- need to make manual validation for email -->
+									<label for="email">Email</label>
+									<input
+										type="email"
+										id="email"
+										placeholder="Enter Email"
+									/>
+								</div>
+								<div>
+									<label for="phone">Phone</label>
+									<input
+										type="tel"
+										id="phone"
+										placeholder="Enter phone number"
+									/>
+								</div>
+								<div>
+									<label for="password-field1"
+										>Password</label
+									>
+									<input
+										type="password"
+										id="password-field1"
+										placeholder="Enter new password"
+									/>
+								</div>
+								<div>
+									<label for="password-field2"
+										>Confirm password</label
+									>
+									<input
+										type="password"
+										id="password-field2"
+										placeholder="Re-enter password"
+									/>
+								</div>
+							</div>
+						</div>
+						<button type="button">Create Account</button>
+						<div class="login-option">
+							<p>Already have an account?</p>
+							<a href="" class="login">Log in</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- -->
 		<script src="scripts.js"></script>
 	</body>
 </html>
