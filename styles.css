@@ -132,6 +132,10 @@ input:focus {
 	filter: drop-shadow(#949494 3px 3px 3px);
 }
 
+input::placeholder {
+	color: rgb(224, 214, 214);
+}
+
 .login-option {
 	display: flex;
 	gap: 10px;
@@ -178,7 +182,7 @@ label {
 	font-weight: bold;
 }
 
-input:invalid {
+input:focus:invalid {
 	border: 2px solid brown;
 	background-color: #ff3370;
 	color: whitesmoke;

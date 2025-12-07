@@ -47,7 +47,8 @@
 									<input
 										type="text"
 										id="firstname"
-										placeholder="Enter first name"
+										placeholder="First name"
+										required
 									/>
 								</div>
 								<div>
@@ -55,16 +56,18 @@
 									<input
 										type="text"
 										id="lastname"
-										placeholder="Enter last name"
+										placeholder="Last name"
+										required
 									/>
 								</div>
 								<div>
-									<!-- need to make manual validation for email -->
 									<label for="email">Email</label>
 									<input
 										type="email"
+										pattern="[a-zA-Z0-9+_.%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
 										id="email"
-										placeholder="Enter Email"
+										placeholder="abc@def.com"
+										required
 									/>
 								</div>
 								<div>
@@ -72,7 +75,8 @@
 									<input
 										type="tel"
 										id="phone"
-										placeholder="Enter phone number"
+										placeholder="Phone"
+										required
 									/>
 								</div>
 								<div>
@@ -82,7 +86,10 @@
 									<input
 										type="password"
 										id="password-field1"
+										pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9])\S{8,30}
+"
 										placeholder="Enter new password"
+										required
 									/>
 								</div>
 								<div>
@@ -92,12 +99,15 @@
 									<input
 										type="password"
 										id="password-field2"
+										pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9])\S{8,30}
+"
 										placeholder="Re-enter password"
+										required
 									/>
 								</div>
 							</div>
 						</div>
-						<button type="submit">Create Account</button>
+						<button type="button">Create Account</button>
 						<div class="login-option">
 							<p>Already have an account?</p>
 							<a href="" class="login">Log in</a>
